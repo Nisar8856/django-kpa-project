@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: django-kpa-app
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "sh start.sh"
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        value: your-secret-key-here
+      - key: DB_NAME
+        value: yourdbname
+      - key: DB_USER
+        value: yourdbuser
+      - key: DB_PASSWORD
+        value: yourdbpassword
+      - key: DB_HOST
+        value: yourdbhost
+      - key: DB_PORT
+        value: 5432
