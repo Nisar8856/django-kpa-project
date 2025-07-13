@@ -1,0 +1,58 @@
+{
+  "info": {
+    "name": "KPA Django API Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Form Data (POST)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Nisar Shaikh\",\n  \"phone\": \"9876543210\",\n  \"address\": \"Mumbai\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/formdata/",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "formdata",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Form Data by ID (GET)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/formdata/1/",
+          "protocol": "http",
+          "host": [
+            "127.0.0.1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "formdata",
+            "1",
+            ""
+          ]
+        }
+      }
+    }
+  ]
+}
